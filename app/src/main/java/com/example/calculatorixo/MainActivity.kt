@@ -35,6 +35,9 @@ class MainActivity : AppCompatActivity() {
         binding.AC.setOnClickListener {
             binding.EqualText.text = ""
         }
+        binding.rightcover.setOnClickListener{ setTextFields(")")}
+        binding.leftcover.setOnClickListener{setTextFields("(")}
+        binding.Dotbtn.setOnClickListener{setTextFields(".")}
         binding.EqualButton.setOnClickListener {
             try {
                 val complete = ExpressionBuilder(binding.EqualText.text.toString()).build()
