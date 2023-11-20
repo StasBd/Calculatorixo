@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         // Block of button numbers
         binding.One.setOnClickListener { setTextFields("1") }
         binding.Two.setOnClickListener { setTextFields("2") }
@@ -33,20 +32,20 @@ class MainActivity : AppCompatActivity() {
         binding.Multiply.setOnClickListener { setTextFields("*") } // Change to '*'
         binding.Separate.setOnClickListener { setTextFields("/") }
         binding.AC.setOnClickListener {
-            binding.EqualText.text = ""
+            binding.FinalText.text = ""
         }
         binding.rightcover.setOnClickListener{ setTextFields(")")}
         binding.leftcover.setOnClickListener{setTextFields("(")}
         binding.Dotbtn.setOnClickListener{setTextFields(".")}
         binding.EqualButton.setOnClickListener {
             try {
-                val complete = ExpressionBuilder(binding.EqualText.text.toString()).build()
+                val complete = ExpressionBuilder(binding.FinalText.text.toString()).build()
                 val result = complete.evaluate()
                 val biggerResult = result.toLong()
                 if (result == biggerResult.toDouble()) {
-                    binding.EqualText.text = biggerResult.toString()
+                    binding.FinalText.text = biggerResult.toString()
                 } else {
-                    binding.EqualText.text = result.toString()
+                    binding.FinalText.text = result.toString()
                 }
             } catch (error: Exception) {
                 Log.d("ACTIVITY", "ERROR:STR:40")
@@ -55,7 +54,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setTextFields(str: String) {
-        val currentText = binding.EqualText.text.toString()
-        binding.EqualText.text = currentText + str
+        val currentText = binding.FinalText.text.toString()
+        binding.FinalText.text = currentText + str
     }
-}
+    }
+
+
