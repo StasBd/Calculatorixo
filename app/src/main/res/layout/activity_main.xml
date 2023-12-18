@@ -16,7 +16,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.165" />
+        app:layout_constraintVertical_bias="0.262" />
 
     <LinearLayout
         android:layout_width="91dp"
@@ -49,7 +49,7 @@
             android:id="@+id/Seven"
             android:layout_width="match_parent"
             android:layout_height="88dp"
-            android:background="@color/violet"
+            android:background="@color/whitegray"
             android:text="7"
             android:textSize="24sp" />
 
@@ -70,7 +70,7 @@
             android:id="@+id/Two"
             android:layout_width="match_parent"
             android:layout_height="76dp"
-            android:background="@color/violet"
+            android:background="@color/whitegray"
             android:text="2"
             android:textSize="24sp" />
 
@@ -78,7 +78,7 @@
             android:id="@+id/Five"
             android:layout_width="match_parent"
             android:layout_height="75dp"
-            android:background="@color/violet"
+            android:background="@color/whitegray"
             android:text="5"
             android:textSize="24sp" />
 
@@ -86,7 +86,7 @@
             android:id="@+id/Eight"
             android:layout_width="match_parent"
             android:layout_height="85dp"
-            android:background="@color/violet"
+            android:background="@color/whitegray"
             android:text="8"
             android:textSize="24sp" />
 
@@ -94,7 +94,7 @@
             android:id="@+id/Zero"
             android:layout_width="match_parent"
             android:layout_height="69dp"
-            android:background="@color/violet"
+            android:background="@color/whitegray"
             android:text="0"
             android:textSize="24sp" />
 
@@ -115,7 +115,7 @@
             android:id="@+id/Three"
             android:layout_width="match_parent"
             android:layout_height="78dp"
-            android:background="@color/violet"
+            android:background="@color/whitegray"
             android:text="3"
             android:textSize="24sp" />
 
@@ -123,7 +123,7 @@
             android:id="@+id/Six"
             android:layout_width="match_parent"
             android:layout_height="73dp"
-            android:background="@color/violet"
+            android:background="@color/whitegray"
             android:text="6"
             android:textSize="24sp" />
 
@@ -131,7 +131,7 @@
             android:id="@+id/Nine"
             android:layout_width="match_parent"
             android:layout_height="84dp"
-            android:background="@color/violet"
+            android:background="@color/whitegray"
             android:text="9"
             android:textSize="24sp" />
 
@@ -192,14 +192,14 @@
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="78dp"
+        android:layout_height="76dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FinalText"
-        app:layout_constraintVertical_bias="0.351">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.526">
 
         <Button
             android:id="@+id/Dotbtn"
@@ -213,7 +213,7 @@
             android:id="@+id/leftcover"
             android:layout_width="101dp"
             android:layout_height="match_parent"
-            android:background="@color/whitegray"
+            android:background="@color/violet"
             android:text="("
             android:textSize="24sp" />
 
@@ -221,7 +221,7 @@
             android:id="@+id/rightcover"
             android:layout_width="107dp"
             android:layout_height="match_parent"
-            android:background="@color/whitegray"
+            android:background="@color/violet"
             android:text=")"
             android:textSize="24sp" />
 
@@ -230,7 +230,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/whitegray"
+            android:background="@color/violet"
             android:text="C"
             android:textSize="24sp" />
     </LinearLayout>
